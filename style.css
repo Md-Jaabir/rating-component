@@ -98,6 +98,12 @@ body{
     color: var(--White);
     transition: .2s linear;
 }
+.select-rating button.selected{
+  background: var(--MediumGrey);
+  color: var(--White);
+  transition: .2s linear;
+}
+
 
 .submit{
     margin-top: 15px;
