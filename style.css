@@ -1,0 +1,148 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --DarkestBlue: hsl(216, 12%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p,div,button{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.hide{
+    display: none!important;
+}
+
+h1,h2,h3,h4,p,div,button{
+    font-family: "Overpass", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--DarkestBlue);
+}
+
+.card{
+    background-color: var(--DarkBlue);
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 390px;
+}
+
+.card .star-cont{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(214, 19%, 21%);
+    border-radius: 50%;
+}
+
+.star-cont img{
+    width: 40%;
+}
+
+.card h2{
+    color: var(--White);
+    font-weight: 600;
+    margin-top: 12px;
+    font-size: 25px;
+}
+
+.card p{
+    color: var(--MediumGrey);
+    line-height: 22px;
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+.rating-card .select-rating{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.select-rating button{
+    outline: none;
+    border: none;
+    background-color: hsl(214, 19%, 21%);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--LightGrey);
+    padding: 0;
+    cursor: pointer;
+}
+
+.select-rating button:hover{
+    background-color: rgb(255 127 0);
+    color: var(--White);
+    transition: .2s linear;
+}
+
+.submit{
+    margin-top: 15px;
+    background-color: rgb(255 127 0);
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--White);
+    padding: 10px 0;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.submit:hover{
+    background-color: var(--White);
+    color: rgb(255 127 0);
+    transition: .2s linear;
+}
+
+.success-card{
+    align-items: center;
+}
+
+.success-card p{
+    text-align: center;
+}
+
+.success-card .result{
+    margin-top: 12px;
+    padding: 8px 17px;
+    background-color: hsl(214, 19%, 21%);
+    color: rgb(211 124 37);
+    font-size: 14px;
+    border-radius: 15px;
+    letter-spacing: 0.5px;
+}
+
+@media screen and (max-width:420px) {
+    .card{
+        width: 90%;
+    }
+
+    .desktop-break{
+        display: none;
+    }
+}
